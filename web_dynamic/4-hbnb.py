@@ -24,7 +24,7 @@ def hbnb():
     amenities = storage.all('Amenity').values()
     places = storage.all('Place').values()
     users = {user.id: f"{user.first_name} {user.last_name}" for user in storage.all('User').values()}
-    return render_template('2-hbnb.html',
+    return render_template('4-hbnb.html',
                            cache_id=uuid.uuid4(),
                            states=states,
                            amenities=amenities,
