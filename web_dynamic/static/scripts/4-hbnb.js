@@ -31,7 +31,7 @@ $(document).ready(() => {
       contentType: 'application/json',
       data: JSON.stringify({ amenities: Object.keys(selectedAmenities) }),
       success: (data) => {
-        $('section.places').empty(); // Clear the places
+        $('section.places').empty();
         for (const place of data) {
           $('section.places').append(`
             <article>
