@@ -19,3 +19,15 @@ header .logo {
     transform: translateY(-50%);
     right: 30px;
 }
+
+header #api_status {
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+    border-radius: 50%;
+    background-color: #cccccc;
+}
+header #api_status.available {
+	background-color: #ff545f;
+}
